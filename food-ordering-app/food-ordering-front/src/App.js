@@ -70,7 +70,7 @@ function App() {
             <Route path="/edit-employee/:id" element={<PrivateRoute element={<CreateEmployeeComponent />} allowedRoles={['ADMIN']} />} />
             <Route path="/registration" element={<RegistrationComponent />} />
             <Route path="/login" element={<LoginComponent />} />
-            <Route path="/My-profile" element={<PrivateRoute element={<MyProfileComponent />} allowedRoles={['USER']} />} />
+            <Route path="/Myprofile" element={<PrivateRoute element={<MyProfileComponent />} allowedRoles={['USER']} />} />
             <Route path="/meals" element={<PrivateRoute element={<ListMealComponent />} allowedRoles={['ADMIN']} />} />
             <Route path="/menu" element={<MenuMealTypeComponent />} />
             <Route path="/meal-types" element={<PrivateRoute element={<ListMealTypeComponent />} allowedRoles={['ADMIN']} />} />
