@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import CreateEmployeeComponent from './components/employee/CreateEmployeeComponent';
 import LoginComponent from './components/login/LoginComponent';
-import MyProfileComponent from './components/my-profile/MyProfileComponent';
+import MyProfileComponent from './components/My-profile/MyProfileComponent';
 import ListMealComponent from './components/meal/ListMealComponent';
 import MenuMealTypeComponent from './components/menu/MenuMealTypeComponent';
 import ListMealTypeComponent from './components/meal-type/ListMealTypeComponent';
@@ -70,7 +70,7 @@ function App() {
             <Route path="/edit-employee/:id" element={<PrivateRoute element={<CreateEmployeeComponent />} allowedRoles={['ADMIN']} />} />
             <Route path="/registration" element={<RegistrationComponent />} />
             <Route path="/login" element={<LoginComponent />} />
-            <Route path="/my-profile" element={<PrivateRoute element={<MyProfileComponent />} allowedRoles={['USER']} />} />
+            <Route path="/My-profile" element={<PrivateRoute element={<MyProfileComponent />} allowedRoles={['USER']} />} />
             <Route path="/meals" element={<PrivateRoute element={<ListMealComponent />} allowedRoles={['ADMIN']} />} />
             <Route path="/menu" element={<MenuMealTypeComponent />} />
             <Route path="/meal-types" element={<PrivateRoute element={<ListMealTypeComponent />} allowedRoles={['ADMIN']} />} />
