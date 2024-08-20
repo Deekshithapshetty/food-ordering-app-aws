@@ -35,7 +35,7 @@ class UserService{
     }
 
     registration(user){
-        return axios.post("http://localhost:8080/api/user/registration", user);
+        return axios.post("http://3.235.104.196:8080/api/user/registration", user);
     }
 
     getCurrentUser(){
