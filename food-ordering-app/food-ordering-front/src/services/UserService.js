@@ -35,12 +35,12 @@ class UserService{
     }
 
     registration(user){
-        return axios.post("http://3.235.104.196:8080/api/user/registration", user);
+        return axios.post("http://3.230.3.253:8080/api/user/registration", user);
     }
 
     getCurrentUser(){
         TokenService.setTokenInHeader();
-        return axios.get("http://3.235.104.196:8080/api/user/getCurrentUser");
+        return axios.get("http://3.230.3.253:8080/api/user/getCurrentUser");
     }
 
     updateUser(user){
