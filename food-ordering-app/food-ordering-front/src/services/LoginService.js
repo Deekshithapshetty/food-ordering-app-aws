@@ -3,12 +3,12 @@ import TokenService from "./TokenService";
 
 class LoginService{
     login(loginParams){
-        return axios.post("http://107.21.189.199:8080/api/login", loginParams);
+        return axios.post("http://18.232.132.83:8080/api/login", loginParams);
     }
 
     logout(){
         TokenService.setTokenInHeader();
-        return axios.get("http://107.21.189.199:8080/api/logout");
+        return axios.get("http://18.232.132.83:8080/api/logout");
     }
 }
 
