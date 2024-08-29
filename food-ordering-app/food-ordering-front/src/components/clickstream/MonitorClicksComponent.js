@@ -34,7 +34,7 @@ function sendClickDataToKinesis(data) {
     var params = {
         Data: JSON.stringify(data),
         PartitionKey: 'click-' + Date.now(), // Unique partition key
-        StreamName: 'ClickStreamStream' // Replace with your Kinesis stream name
+        StreamName: 'FoodDeliveryDataStream' // Replace with your Kinesis stream name
     };
 
     kinesis.putRecord(params, function(err, data) {
