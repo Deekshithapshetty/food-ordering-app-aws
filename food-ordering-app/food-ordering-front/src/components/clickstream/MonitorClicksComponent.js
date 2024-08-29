@@ -7,8 +7,9 @@ const MonitorClicksComponent = () => {
 // Configure AWS SDK
    AWS.config.update({
     region: 'us-east-1',
-    accessKeyId: 'AKIATCKAPACKCKHTW7WP', 
-    secretAccessKey: '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'
+    AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: 'us-east-1:7ec33fb0-cc65-430c-a6ff-0bbd0b181c66', // Your Identity Pool ID
+});
 });
 
 var kinesis = new AWS.Kinesis();
