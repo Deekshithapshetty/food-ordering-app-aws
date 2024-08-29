@@ -7,8 +7,8 @@ const MonitorClicksComponent = () => {
 // Configure AWS SDK
    AWS.config.update({
     region: 'us-east-1',
-    accessKeyId: 'AKIATCKAPACKPXCICFES', 
-    secretAccessKey: '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'
+    accessKeyId: 'AKIATCKAPACKCKHTW7WP', 
+    secretAccessKey: '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'
 });
 
 var kinesis = new AWS.Kinesis();
