@@ -20,6 +20,7 @@ import MyActiveFinalOrdersComponent from './components/my-active-final-orders/My
 import OrderHistoryComponent from './components/order-history/OrderHistoryComponent';
 import MyDeliveredFinalOrdersComponent from './components/my-delivered-final-orders/MyDeliveredFinalOrdersComponent';
 import ListUserComponent from './components/user/ListUserComponent';
+import MonitorClicksComponent from './components/clickstream/MonitorClicksComponent';
 import jwtDecode from 'jwt-decode';
 import { Navigate } from 'react-router-dom';
 import NavbarComponent from './components/navbar/NavbarComponent';
@@ -82,6 +83,7 @@ function App() {
             <Route path="/my-delivered-final-orders" element={<PrivateRoute element={<MyDeliveredFinalOrdersComponent />} allowedRoles={['USER']} />} />
             <Route path="/order-history" element={<PrivateRoute element={<OrderHistoryComponent />} allowedRoles={['ADMIN', 'EMPLOYEE']} />} />
             <Route path="/users" element={<PrivateRoute element={<ListUserComponent />} allowedRoles={['ADMIN']} />} />
+            <Route path="/clicks" element={<MonitorClicksComponent />} />
           </Routes>
         </div>
         <FooterComponent />
