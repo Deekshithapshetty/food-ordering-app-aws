@@ -3,17 +3,23 @@ import AWS from 'aws-sdk';
 
 const MonitorClicksComponent = () => {
 
-    // Configure AWS SDK
-AWS.config.update({
-    region: 'us-east-1'
+//     // Configure AWS SDK
+// AWS.config.update({
+//     region: 'us-east-1'
+// });
+
+// // Set the credentials
+// AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+//     IdentityPoolId: 'us-east-1:7ec33fb0-cc65-430c-a6ff-0bbd0b181c66' // Your Identity Pool ID
+// });
+
+// Configure AWS SDK
+   AWS.config.update({
+    region: 'us-east-1',
+    accessKeyId: 'AKIATCKAPACKPXCICFES', 
+    secretAccessKey: 'uaAAxsPXCbDnZjYB2qmwf/CrlxwBTOTuWchl33j7'
 });
-
-// Set the credentials
-AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: 'us-east-1:7ec33fb0-cc65-430c-a6ff-0bbd0b181c66' // Your Identity Pool ID
-});
-
-
+    
 // // Configure AWS SDK
 //    AWS.config.update({
 //     region: 'us-east-1',
